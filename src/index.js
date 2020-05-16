@@ -7,7 +7,7 @@ import Resume from './resume';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App resume={JSON.stringify(Resume, null, 2)}/>
+    <App resume={Resume}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -7,9 +7,17 @@ export interface Resume {
 
 export interface Personal {
     name: string;
-    address: any;
+    address: Address;
     email: string;
     phone: string;
+}
+
+export interface Address {
+    line1: string;
+    line2?: string;
+    city: string;
+    state: string;
+    zip: string;
 }
 
 export interface Education {

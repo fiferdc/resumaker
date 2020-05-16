@@ -1,0 +1,40 @@
+@media print{
+    @page {
+        size: letter;
+        margin: 2cm;
+    }
+}
+
+.Personal .Name {
+    font-size: 16pt;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.Section {
+    margin-top: 1em;
+}
+
+.Section .Title {
+    font-size: 14pt;
+    font-weight: bold;
+    width: 100%;
+}
+
+.Section hr {
+    border: 1px solid black;
+}
+
+.twoColumn {
+    display: flex
+}
+
+.twoColumn span:nth-child(1) {
+    width: 100%;
+}
+
+.twoColumn span:nth-child(2) {
+    width: 100%;
+    text-align: right;
+}

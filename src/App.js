@@ -1,27 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './resume.css'
+import { Personal } from './components/personal/Personal';
+import { Education } from './components/education/Education';
+import { Experience } from './components/experience/Experience';
+import { Skills } from './components/skills/Skills';
+import { Section } from './components/Section';
 
-function App(props) {
+function App({resume}) {
+  const experience = resume.experience.map(experience => 
+    <Experience experience={experience}/>
+  )
+  const education = resume.education.map(education => 
+    <Education education={education}/>
+  )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          {props.resume}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div style={{width: '100%'}}>
+        <Personal personal={resume.personal} />
+        <Section title='Education'>
+          {education}
+        </Section>
+        <Section title='Experience'>
+          {experience}
+        </Section>
+        <Section title='Computer Skills'>
+          <Skills skills={resume.skills} />
+        </Section>
+      </div>
     </div>
   );
 }

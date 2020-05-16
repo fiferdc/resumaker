@@ -40,7 +40,8 @@ export default {
                start: 'November 2019',
                accomplishments: [
                   'Released a Fitbit version of the LIFE Extend mobile app',
-                  'Contributed to open source projects '
+                  'Contributed to open source projects.',
+                  'Generated this resume as a React app.'
                ]
             },
             {
@@ -115,19 +116,19 @@ export default {
       }
    ],
    skills: {
-      languages: [
+      'Languages': [
          'Javascript/Typescript',
          'Java',
          'C/C++',
          'Python'
       ],
-      platforms: [
+      'Platforms': [
          'OS X',
          'Ubuntu',
          'Solaris',
          'Windows'
       ],
-      additional: [
+      'Additional Skills': [
          'AWS',
          'Scrum',
          'Git',
