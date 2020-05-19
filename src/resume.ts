@@ -4,7 +4,7 @@ export default {
    personal: {
       name: 'David Fifer',
       address: {
-         line1: '13931 Conner Knoll Parkway',
+         line1: '13931 Conner Knoll Pkwy',
          city: 'Fishers',
          state: 'IN',
          zip: '46038'
@@ -24,7 +24,10 @@ export default {
             },
             {
                level: DegreeLevel.BS,
-               subject: 'Computer Science Honors and Math',
+               subject: [
+                  'Computer Science Honors',
+                  'Math'
+               ],
                obtained: 'May 2014'
             }
          ]
@@ -39,9 +42,9 @@ export default {
                role: 'Senior Software Engineer',
                start: 'November 2019',
                accomplishments: [
-                  'Released a Fitbit version of the LIFE Extend mobile app',
+                  'Brought a Fitbit version of the LIFE Extend mobile app from a hackathon project to release.',
                   'Contributed to open source projects.',
-                  'Generated this resume as a React app.'
+                  'Introduced Samsung Health to LIFE Extend through Android native.'
                ]
             },
             {
@@ -49,10 +52,10 @@ export default {
                start: 'August 2018',
                end: 'November 2019',
                accomplishments: [
-                  'Wrapped a JSON transformation library to allow for rapid API transformations into a unified schema',
-                  'Introduced HealthKit, Fitbit, and Oura integrations into LIFE Extend',
-                  'Utilized AVA/Jest, Jenkins, and Terraform for CI/CD',
-                  'Improved local development by mocking AWS services through Docker and localstack'
+                  'Wrapped a JSON transformation library to allow for rapid API transformations into a unified schema.',
+                  'Introduced HealthKit, Fitbit, and Oura integrations into LIFE Extend.',
+                  'Utilized AVA/Jest, Jenkins, and Terraform for CI/CD and IaC.',
+                  'Improved local development by mocking AWS services through Docker and localstack.'
                ]
             }
          ]
@@ -88,11 +91,9 @@ export default {
                accomplishments: [
                   'Implemented full-stack REST applications on Spring MVC and hybris.',
                   'Constructed hybris technical specifications from client functional speciifcations for other developers to utilize.',
-                  'Tested various levels of functionality iwth JUnit and Mockito on a CI environment.',
+                  'Tested various levels of functionality with JUnit and Mockito on a CI environment.',
                   'Designed front-end pages and components from design documents and UX wireframes.',
-                  'Led a training session for the business team and answered questions in the respective client training session.',
-                  'Demonstrated end-of-sprint functionality to the client while on-site.',
-                  'Resolved technical questions between platform teams.'
+                  'Led a training session for the business team and answered questions in the respective client training session.'
                ]
             }
          ]
@@ -108,8 +109,7 @@ export default {
                accomplishments: [
                   'Designed performance analysis tools for a rendering engine.',
                   'Generated real-time visualizations of code performance on an external web page.',
-                  'Developed an application to auto-insert profiling code based on the structure of existing code.',
-                  'Added additional unit tests to ensure a stable build.'
+                  'Developed an application to auto-insert profiling code based on the structure of existing code.'
                ]
             }
          ]
@@ -132,8 +132,9 @@ export default {
          'AWS',
          'Scrum',
          'Git',
-         'Spring MVC',
          'Jenkins',
+         'React',
+         'Spring MVC',
          'OpenGL',
          'Photoshop'
       ]

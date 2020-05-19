@@ -1,5 +1,6 @@
 import React from 'react';
 import * as ResumeTypes from '../../resumeTypes';
+import { PersonalItem, SupportedIconTypes } from './PersonalItem';
 
 type PersonalProps = {
   personal: ResumeTypes.Personal;
@@ -12,18 +13,23 @@ export const Personal: React.FC<PersonalProps> = ({personal}) => {
 
   return (
     <div className='Personal'>
-      <div className='Name'>
-        {personal.name}
-      </div>
-      <div className='twoColumn'>
-        <span>
-          {streetAddress} <br/>
-          {cityStateZip}
-        </span>
-        <span>
-          {personal.email}<br/>
-          {personal.phone}
-        </span>
+      <div style={{display: 'flex', flexDirection: 'column'}}>
+          <PersonalItem type={SupportedIconTypes.Home}>
+            {streetAddress} <br/>
+            {cityStateZip}
+          </PersonalItem>
+          <PersonalItem type={SupportedIconTypes.Email}>
+            {personal.email}
+          </PersonalItem>
+          <PersonalItem type={SupportedIconTypes.Phone}>
+            {personal.phone}
+          </PersonalItem>
+          <PersonalItem type={SupportedIconTypes.Github}>
+            {'fiferdc'}
+          </PersonalItem>
+          <PersonalItem type={SupportedIconTypes.Linkedin}>
+            {'fiferdc'}
+          </PersonalItem>
       </div>
     </div>
   )

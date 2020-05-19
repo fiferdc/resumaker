@@ -10,7 +10,6 @@ export const Section: React.FC<SectionProps> = (props) => {
       <span className='Title'>
         {props.title}
       </span>
-      <hr />
       {props.children}
     </div>
   )
