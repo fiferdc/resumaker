@@ -6,13 +6,18 @@ type ExperiencePositionProps = {
 }
 
 export const ExperiencePosition: React.FC<ExperiencePositionProps> = ({position}) => {
-  const accomplisments = position.accomplishments.map(accomplisment => (
-      <li>{accomplisment}</li>
-  ))
+  const accomplisments = position.accomplishments.map(accomplishment => {
+    if (!accomplishment.endsWith('.')) {
+      console.warn(`Accomplishment "${accomplishment.substring(0, 10)}..." does not end with a period.`)
+    }
+    return (
+      <li>{accomplishment}</li>
+    )
+  });
 
   return (
     <div>
-      <div className='twoColumn'>
+      <div className='twoColumn' style={{fontWeight: 'bold', fontStyle: 'italic'}}>
         <span>
           {position.role}
         </span>

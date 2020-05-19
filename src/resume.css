@@ -1,40 +1,115 @@
-@media print{
-    @page {
-        size: letter;
-        margin: 2cm;
-    }
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Lato', serif;
 }
 
-.Personal .Name {
-    font-size: 16pt;
+.Name {
+    font-family: 'Cinzel', serif;
+    font-size: 24pt;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    border-bottom: 3pt solid #333;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background-color: #f6f6f6;
+}
+
+.Personal svg {
+    padding-right: 0.5em;
+    color: #333;
+}
+
+.PersonalItem {
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 0.5em;
 }
 
 .Section {
-    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .Section .Title {
+    display: flex;
+    font-family: 'Cinzel', serif;
     font-size: 14pt;
     font-weight: bold;
     width: 100%;
+    border-bottom: 1px solid #333;
+    margin-bottom: 0.5em;
+    background-color: #f6f6f6;
+    padding: 0.25em;
 }
 
-.Section hr {
-    border: 1px solid black;
+.Degree {
+    margin-bottom: 1em;
+}
+
+.Skills>div {
+    margin-bottom: 1em;
 }
 
 .twoColumn {
     display: flex
 }
 
-.twoColumn span:nth-child(1) {
+.twoColumn>span:nth-child(1) {
     width: 100%;
 }
 
-.twoColumn span:nth-child(2) {
+.twoColumn>span:nth-child(2) {
     width: 100%;
     text-align: right;
+}
+
+.primary.twoColumn>span {
+    padding: 0.5em;
+}
+
+.primary.twoColumn>span:nth-child(1) {
+    width: 22em;
+    padding-right: 1em;
+}
+.primary.twoColumn>span:nth-child(2) {
+    padding-left: 1em;
+}
+
+.Personal .twoColumn span:nth-child(2) {
+    width: auto;
+    text-align: left;
+}
+
+
+@media print{
+    @page {
+        size: letter;
+        margin: 0px;
+    }
+    html, body {
+        height:100vh; 
+        margin: 0 !important; 
+        padding: 0 !important;
+        overflow: hidden;
+    }
+    .primary {
+        padding: 2cm;
+        padding-top: 0cm;
+    }
+    .Name {
+        padding-top: 1cm;
+    }
+}
+
+@media screen {
+    .primary {
+        padding: 5em;
+        padding-top: 0em;
+    }
+    .Name {
+        padding-top: 2em;
+    }
 }

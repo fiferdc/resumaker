@@ -13,12 +13,9 @@ export const Experience: React.FC<ExperienceProps> = ({experience}) => {
   
   return (
     <div style={{marginBottom: '1em'}}>
-      <div className='twoColumn'>
+      <div>
         <span style={{fontWeight: 'bold'}}>
-          {experience.company}
-        </span>
-        <span>
-          {experience.location}
+          {experience.company} /           {experience.location}
         </span>
       </div>  
       <div>

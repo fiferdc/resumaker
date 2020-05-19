@@ -8,13 +8,10 @@ type EducationProps = {
 
 export const Education: React.FC<EducationProps> = ({education}) => {
   const degrees = education.degrees.map(degree => (
-    <Degree degree={degree} />
+    <Degree degree={degree} school={education.school}/>
   ))
   return (
     <div className='Education'>
-      <span className='School'>
-        {education.school}, {education.location}
-      </span>
       {degrees}
     </div>
   )

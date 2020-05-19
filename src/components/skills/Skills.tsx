@@ -7,7 +7,12 @@ type SkillsProps = {
 export const Skills: React.FC<SkillsProps> = (props) => {
   const skills = Object.entries(props.skills).map(([skill, values]) => (
     <div>
-      <b>{skill}</b> - {(values as string[]).join(', ')}
+      <div style={{fontWeight: 'bold'}}>
+        {skill}
+      </div>
+      <div>
+        {(values as string[]).join(', ')}
+      </div>
     </div>
   ));
 

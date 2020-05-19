@@ -28,7 +28,7 @@ export interface Education {
 
 export interface Degree {
     level: DegreeLevel;
-    subject: string;
+    subject: string | string[];
     obtained?: string;
 }
 
