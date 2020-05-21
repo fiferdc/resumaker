@@ -72,7 +72,7 @@ export default {
                   'Enhanced and supported legacy Java web applications.',
                   'Identified and closed security vulnerabilities.',
                   'Introduced code reviews, branching strategies, and other best development practices.',
-                  'Created a MIRA-nomiated FHIR application built on HIE data.',
+                  'Created a MIRA-nominated FHIR application built on HIE data.',
                   'Scripted several bash programs to generate complex audits from Tomcat logs and SQL records.',
                   'Provided technical support and knowledge tranfer for junior developers and contractors.',
                   'Proposed and delivered on a multi-stage pilot delivery to regain pilot user confidence.'
@@ -117,7 +117,7 @@ export default {
    ],
    skills: {
       'Languages': [
-         'Javascript/Typescript',
+         'JavaScript/TypeScript',
          'Java',
          'C/C++',
          'Python'
