@@ -72,9 +72,9 @@ export default {
                   'Enhanced and supported legacy Java web applications.',
                   'Identified and closed security vulnerabilities.',
                   'Introduced code reviews, branching strategies, and other best development practices.',
-                  'Created a MIRA-nomiated FHIR application built on HIE data.',
+                  'Created a MIRA-nominated FHIR application built on HIE data.',
                   'Scripted several bash programs to generate complex audits from Tomcat logs and SQL records.',
-                  'Provided technical support and knowledge tranfer for junior developers and contractors.',
+                  'Provided technical support and knowledge transfer for junior developers and contractors.',
                   'Proposed and delivered on a multi-stage pilot delivery to regain pilot user confidence.'
                ]
             }
@@ -90,7 +90,7 @@ export default {
                end: 'February 2017',
                accomplishments: [
                   'Implemented full-stack REST applications on Spring MVC and hybris.',
-                  'Constructed hybris technical specifications from client functional speciifcations for other developers to utilize.',
+                  'Constructed hybris technical specifications from client functional specifications for other developers to utilize.',
                   'Tested various levels of functionality with JUnit and Mockito on a CI environment.',
                   'Designed front-end pages and components from design documents and UX wireframes.',
                   'Led a training session for the business team and answered questions in the respective client training session.'
@@ -117,7 +117,7 @@ export default {
    ],
    skills: {
       'Languages': [
-         'Javascript/Typescript',
+         'JavaScript/TypeScript',
          'Java',
          'C/C++',
          'Python'
